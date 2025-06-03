@@ -1,0 +1,39 @@
+ Problem Description
+
+Given an  board with a knight (like a chess knight) placed at a starting position (R, C)and a target position (S, K), write a program to find the minimum number of moves for the knight to reach the target position. The knight moves in an 'L' shape: two squares in one direction and then one square perpendicular like the following:
+
+
+
+API
+
+public int minKnightMoves(int N, int M, int R, int C, int S, int K)
+
+ Input:
+
+ - N, M: integers representing the board dimensions
+
+ - R, C: integers representing the knight's starting position
+
+ - S, K: integers representing the target position
+
+ Output:
+
+   Minimum number of moves required for the knight to reach the target, or -1 if unreachable.
+
+ Constraints:
+
+ 1 < N, M <= 100, 1 <= R <= N, 1 <= C <= M, 1 <= S <= N, 1 <= K <= M
+
+Main Method
+
+public class TestCases {
+
+  public static void main(String[] args) {
+
+        Itm itm = new Itm();
+
+        System.out.println("2 :"+itm.minKnightMoves(9, 9, 3, 5, 2, 8)); // Expected output: 2
+
+  }
+
+}

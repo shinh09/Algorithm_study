@@ -1,0 +1,73 @@
+Problem Description
+
+You are given a set of ropes, each with a different maximum weight capacity. The objective is to determine the maximum weight of an object that can be lifted using any subset of these ropes.
+
+Each rope in a selected subset must evenly share the weight of the object. This means that if k ropes are used to lift an object of weight w, then each rope must endure w/k. However, no rope can endure more than its maximum capacity.
+
+Example
+
+Given ropes = [10, 20, 20], let's analyze why the maximum weight is 40:
+
+•        The three ropes have maximum capacities of [10, 20, 20].
+
+•        If we use only the rope with 10, the max weight we can lift is 10.
+
+•        If we use one rope of 20, the max weight we can lift is 20.
+
+•        If we use both ropes of 20, then they evenly split the total weight, meaning each can handle half the load.
+
+•        Since each can lift 20, the total weight they can lift together is 20 + 20 = 40.
+
+•        If we tried using all three ropes (10, 20, 20), the weight would be divided evenly among three ropes, limiting the total weight.
+
+•        Optimal Choice: Using only the two 20 ropes achieves the maximum weight capacity of 40.
+
+API
+
+public int maxWeight(int[] ropes)
+
+Input:
+
+ropes: An integer array representing the maximum weight each rope can endure.
+
+Output:
+
+An integer representing the maximum weight that can be lifted using a subset of ropes.
+
+Constraints:
+
+1 ≤ ropes.length ≤ 100, 1 ≤ ropes[i] ≤ 1000
+
+
+
+Main method for Test
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        Itm itm = new Itm(); // Create an instance of the Itm class
+
+
+
+        // Define an integer array containing the maximum weight each rope can endure
+
+        int[] ropes = {10, 20, 20};
+
+
+
+        // Compute the maximum weight that can be lifted
+
+        int result = itm.maxWeight(ropes);
+
+
+
+        // Print the result, expected output is 40
+
+        System.out.println("Maximum weight that can be lifted: " + result);
+
+    }
+
+
+
+}

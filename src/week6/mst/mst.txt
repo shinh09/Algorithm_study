@@ -1,0 +1,19 @@
+Implement the Kruskal algorithm to find the Minimum Spanning Tree (MST) of a given weighted, undirected graph represented by an incidence matrix.
+
+API
+
+public List<Edge> kruskalMST()
+
+output:
+
+List of Edge
+
+public class Edge implements Comparable<Edge> {
+
+    int u, v;
+
+    double weight;
+
+    Edge next;
+
+}

@@ -1,0 +1,37 @@
+Problem Description
+
+The problem is to find the maximum sum of a contiguous subarray within a given integer array.For example, given arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4], the optimal subarray is [4, -1, 2, 1], which has the maximum sum of 6.
+
+API
+
+public int maxSubarraySum(int[] arr)
+
+Input
+
+arr: An array, where each element is between -1000 and 1000.
+
+Output:
+
+    An integer representing the maximum sum of a contiguous subarray.
+
+Constraint
+
+    The input size N:  1 ≤ N ≤ 100
+
+Main method for Test
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        Itm itm = new Itm();
+
+        int[] arr = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+
+        System.out.println(itm.maxSubarraySum(arr)); // Expected output: 6
+
+    }
+
+
+
+}

@@ -1,4 +1,4 @@
-package shortest;
+package week7.shortest;
 
 public class Main {
 	public static void main(String[] args) {	
